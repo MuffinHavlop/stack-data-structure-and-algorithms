@@ -1,0 +1,22 @@
+def create_stack():
+  stack = []
+  return stack
+
+def check_empty(stack):
+  return len(stack) == 0
+
+def push(stack, element):
+  stack.append(element)
+
+def pop(stack):
+  if check_empty(stack):
+    return stack
+  return stack.pop()
+
+ele1 = push(stack, str(1))
+ele2 = push(stack, str(2))
+ele3 = push(stack, str(3))
+ele4 = push(stack, str(4))
+
+print("the popped element: ", pop(stack))
+print("the list after pooped: ", stack)
